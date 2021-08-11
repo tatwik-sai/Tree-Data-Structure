@@ -1,10 +1,10 @@
-# simple-pytree
+# simplepytree
 
 Easy to use Tree Data Structure with many useful methods.
 
 Developed by Tatwik.
 
-# Examples of using simple-pytree
+# Examples of using simplepytree
 
 ![Tree Example](https://adrianmejia.com/images/tree-parts.jpg)
 
@@ -16,7 +16,7 @@ We will consider this image as an example for the below code.
 1. Adding the root node at initialization.
 
 ```python
-  from tree import Tree
+  from simplepytree import Tree
   tree = Tree(root_nodes=['a'])
 ```
 
@@ -25,7 +25,7 @@ We will consider this image as an example for the below code.
 2. Adding the root node after initialization.
 
 ```python
-  from simple-pytree import Tree
+  from simplepytree import Tree
   tree = Tree()
   tree.add_node(('nil', 'a'))
 ```
