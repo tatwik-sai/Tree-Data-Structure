@@ -129,7 +129,6 @@ tree.add_children('h', ['i', 'j'])
 > tree.delete('d')
 > ```
 > Because we deleted node 'd' all the nodes below it will also get deleted so the nodes ['d', 'g', 'h', 'i', 'j'] will be deleted.
-
 ---
 
 [Mail me](mailto:sreenu143anupama@gmail.com)
