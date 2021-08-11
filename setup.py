@@ -1,30 +1,23 @@
-from setuptools import setup, find_packages
-import codecs
-import os
+from setuptools import setup
 
-VERSION = '0.0.1'
-DESCRIPTION = 'A Graph Data Structure with many useful methods'
-LONG_DESCRIPTION = 'A package that allows to use Graph Data Structure to perform many tasks.'
+with open("README.md", 'r') as file:
+    long_description = file.read()
 
-# Setting up
 setup(
-    name="graph",
-    version=VERSION,
-    author="Tatwik",
-    author_email="<sreenu143anupama@gmail.com>",
-    description=DESCRIPTION,
+    name='treeds',
+    version='0.0.1',
+    description='Simple implementation of Tree Data Structure',
     long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
-    packages=find_packages(),
-    install_requires=[],
-    keywords=['python', 'graph', 'data-structure', 'search', 'algorithms', 'bfs', 'dfs', 'a*', 'heuristic'],
+    long_description=long_description,
+    py_modules=['treeds'],
+    package_dir={'': 'src'},
+    keywords=['python', 'treeds', 'tree python', 'data structure', 'tree data structure', 'pytree'],
     classifiers=[
         "Development Status :: 1 - Planning",
-        "Intended Audience :: Education",
+        "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
-        "Operating System :: Microsoft :: Windows :: Windows 10"
     ]
 )
