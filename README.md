@@ -71,11 +71,65 @@ tree.add_children('h', ['i', 'j'])
 ## Using the methods of Tree class
 ---
 
-### add_node()
+- ### add_node()
 > Adds the node to the tree.
-> - parameter node: tuple, Tuple with parent and child.
+> - parameter node: Tuple with parent and child.
 > ```python
 > tree.add_node(('parent_node', 'node_name'))
 > ```
 
-### add_children()
+- ### add_children()
+> Adds multiple children to the node.
+> - parameter node: The name of the node.
+> - parameter children: List of children of the node.
+> ```python
+> tree.add_children('node_name', ['child_node1', 'child_node2', 'child_node3'])
+> ```
+
+- ### get_parent()
+> Returns the parent of the given node.
+> - parameter node: The name of the node.
+> - returns: The parent of the given node.
+> ```python
+> tree.get_parent('b')
+> ```
+> Output: 'a'
+
+- ### get_children()
+> Returns the list of childeren of the given node.
+> - parameter node: The name of the node.
+> - returns: The list of children for the node.
+> ```python
+> tree.get_children('a')
+> ```
+> > Output: ['b', 'c', 'd']
+
+- ### get_path()
+> Returns The path from root node to the given node.
+> - parameter node: The name of the node.
+> - return: The list of path from root node to the given node.
+> ```python
+> tree.get_path('i')
+> ```
+> > Output: ['a', 'd', 'h', 'i']
+
+- ### get_depth()
+> Returns the depth at where the node is located in the tree.
+> - parameter node: The name of the node.
+> - return: The depth at which the node is located in the tree.
+> ```python
+> tree.get_depth('g')
+> ```
+> > Output: 2
+
+- ### delete()
+> Deletes the node and the tree to the down of the node.
+> - parameter node: The name of the node.
+> ```python
+> tree.delete('d')
+> ```
+> Because we deleted node 'd' all the nodes below it will also get deleted so the nodes ['d', 'g', 'h', 'i', 'j'] will be deleted.
+
+---
+
+[Mail me](mailto:sreenu143anupama@gmail.com)
