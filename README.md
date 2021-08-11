@@ -25,7 +25,7 @@ We will consider this image as an example for the below code.
 2. Adding the root node after initialization.
 
 ```python
-  from tree import Tree
+  from simple-pytree import Tree
   tree = Tree()
   tree.add_node(('nil', 'a'))
 ```
